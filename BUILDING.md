@@ -182,7 +182,7 @@ It is not advised to mix system and local libraries, except for the list above. 
 There is a [`Dockerfile`](linux/build-environment/Dockerfile) that can be used as an example of how to build Audacity using system libraries: 
 
 ```
-$ docker build -t audacity_linux_env .\linux\build-environment\
+$ docker build -t audacity_linux_env ./linux/build-environment/
 $ docker run --rm -v ${pwd}:/audacity/audacity/ -v ${pwd}/../build/linux-system:/audacity/build -it audacity_linux_env
 ```
 
